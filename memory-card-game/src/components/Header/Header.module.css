@@ -1,0 +1,41 @@
+header {
+    padding: 4px 0;
+}
+
+.headerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.pageTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.titleText {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.titleRed {
+    color: red;
+}
+
+.titleWhite {
+    color: white;
+}
+
+.scoresContainer {
+    display: flex;
+    font-weight: 600;
+    letter-spacing: -1px;
+    gap: 36px;
+}
+
+.score {
+}

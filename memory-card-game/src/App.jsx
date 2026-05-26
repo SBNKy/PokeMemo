@@ -6,7 +6,7 @@ import Footer from "./components/Footer/Footer.jsx";
 import StartMenu from "./pages/StartMenu/StartMenu.jsx";
 
 function App() {
-    const [difficulty, setDifficulty] = useState(null);
+    const [difficulty, setDifficulty] = useState(true); // debug only
 
     return (
         <div className={styles.appWrapper}>
