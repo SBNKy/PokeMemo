@@ -6,7 +6,7 @@ import Footer from "./components/Footer/Footer.jsx";
 import StartMenu from "./pages/StartMenu/StartMenu.jsx";
 
 function App() {
-    const [difficulty, setDifficulty] = useState(true); // debug only
+    const [difficulty, setDifficulty] = useState("medium"); // debug only
 
     return (
         <div className={styles.appWrapper}>
@@ -16,7 +16,7 @@ function App() {
                 <>
                     <Header />
                     <main>
-                        <MemoryGame />
+                        <MemoryGame difficulty={difficulty} />
                     </main>
                     <Footer />
                 </>
