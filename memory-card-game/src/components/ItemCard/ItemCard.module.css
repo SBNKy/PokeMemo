@@ -1,0 +1,13 @@
+.card {
+    background-color: var(--card-bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px 0;
+    /* aspect-ratio: 3 / 4; */
+}
+
+.cardImage {
+    max-width: 150px;
+    image-rendering: pixelated;
+}

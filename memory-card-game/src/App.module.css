@@ -5,5 +5,7 @@
 }
 
 main {
-    position: relative;
+    width: 100%;
+    max-width: var(--game-max-width);
+    margin: 0 auto;
 }

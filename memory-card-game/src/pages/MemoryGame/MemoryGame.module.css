@@ -1,5 +1,6 @@
 .gridBase {
     display: grid;
+    gap: 12px;
 }
 
 .easy {
