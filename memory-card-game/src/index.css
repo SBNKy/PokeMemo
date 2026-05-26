@@ -9,7 +9,7 @@
 :root {
     --game-max-width: 1500px;
     --menu-bg-color: rgb(228, 223, 223);
-    --card-bg-color: rgba(29, 151, 233, 0.7);
+    --card-bg-color: rgba(29, 151, 233, 0.9);
 }
 
 * {

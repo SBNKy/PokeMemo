@@ -1,6 +1,6 @@
 const MAX_POKEMON_ID = 151;
 const URL = "https://pokeapi.co/api/v2/pokemon";
-export default async function fetchPokemons(size = 10) {
+export default async function fetchPokemons(size) {
     const randomIds = new Set();
 
     while (randomIds.size < size) {

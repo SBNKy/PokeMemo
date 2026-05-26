@@ -1,14 +1,14 @@
 import styles from "./ItemCard.module.css";
 
-export default function ItemCard({ name, image }) {
+export default function ItemCard({ name, image, onClick }) {
     return (
-        <div className={styles.card}>
+        <div role="button" className={styles.card} onClick={onClick}>
             <img
                 src={image}
                 className={styles.cardImage}
                 alt={`${name} image`}
             />
-            <p>{name}</p>
+            <p className={styles.cardName}>{name}</p>
         </div>
     );
 }

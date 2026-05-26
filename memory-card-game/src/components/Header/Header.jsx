@@ -1,7 +1,7 @@
 import styles from "./Header.module.css";
 import pokeballIcon from "../../assets/icons/pokeball-icon.png";
 
-export default function Header({ currentScore, highestScore }) {
+export default function Header({ score, highestScore }) {
     return (
         <header>
             <div className={styles.headerContainer}>
@@ -13,8 +13,10 @@ export default function Header({ currentScore, highestScore }) {
                     </div>
                 </div>
                 <div className={styles.scoresContainer}>
-                    <span className={styles.currentScore}>Score: </span>
-                    <span className={styles.highestScore}>Highest Score: </span>
+                    <span className={styles.currentScore}>Score: {score}</span>
+                    <span className={styles.highestScore}>
+                        Highest Score: {highestScore}
+                    </span>
                 </div>
             </div>
         </header>

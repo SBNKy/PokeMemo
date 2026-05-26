@@ -7,6 +7,12 @@ import StartMenu from "./pages/StartMenu/StartMenu.jsx";
 
 function App() {
     const [difficulty, setDifficulty] = useState("medium"); // debug only
+    const [score, setScore] = useState(0);
+    const [highestScore, setHighestScore] = useState(0);
+
+    if (score > highestScore) {
+        setHighestScore((prev) => prev + 1);
+    }
 
     return (
         <div className={styles.appWrapper}>
@@ -14,9 +20,12 @@ function App() {
                 <StartMenu setDifficulty={setDifficulty} />
             ) : (
                 <>
-                    <Header />
+                    <Header score={score} highestScore={highestScore} />
                     <main>
-                        <MemoryGame difficulty={difficulty} />
+                        <MemoryGame
+                            difficulty={difficulty}
+                            setScore={setScore}
+                        />
                     </main>
                     <Footer />
                 </>

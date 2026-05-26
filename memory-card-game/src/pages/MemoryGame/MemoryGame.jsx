@@ -6,8 +6,8 @@ import ItemCard from "../../components/ItemCard/ItemCard.jsx";
 
 const DIFFICULTY_SETTINGS = {
     easy: 10,
-    medium: 20,
-    hard: 30,
+    medium: 18,
+    hard: 24,
 };
 
 export default function MemoryGame({ difficulty, setScore }) {
@@ -64,6 +64,7 @@ export default function MemoryGame({ difficulty, setScore }) {
                         key={card.id}
                         name={card.name}
                         image={card.image}
+                        onClick={() => handleCardClick(card.id)}
                     />
                 ))}
             </div>

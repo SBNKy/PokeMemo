@@ -1,13 +1,15 @@
 .gridBase {
     display: grid;
-    gap: 12px;
+    justify-content: center;
+    gap: 20px;
+    padding: 16px 0;
 }
 
 .easy {
 }
 
 .medium {
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, minmax(120px, 180px));
 }
 
 .hard {

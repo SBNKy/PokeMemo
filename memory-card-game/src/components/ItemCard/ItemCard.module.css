@@ -1,13 +1,28 @@
 .card {
+    position: relative;
     background-color: var(--card-bg-color);
+    border: 1px solid transparent;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     padding: 8px 0;
-    /* aspect-ratio: 3 / 4; */
+    aspect-ratio: 3 / 4;
+    cursor: pointer;
+}
+
+.card:hover {
+    border-color: white;
 }
 
 .cardImage {
-    max-width: 150px;
+    max-width: 2000px;
     image-rendering: pixelated;
+}
+
+.cardName {
+    position: absolute;
+    bottom: 8px;
+    color: white;
+    font-weight: 600;
 }
