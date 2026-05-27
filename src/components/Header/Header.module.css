@@ -1,13 +1,27 @@
 header {
+    width: 100%;
     padding: 4px 0;
-}
-
-.headerContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     gap: 4px;
+    padding: 0 16px;
+}
+
+.topRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.leftSpacer,
+.rightContent {
+    flex: 1;
+}
+
+.rightContent {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .pageTitle {
@@ -32,6 +46,7 @@ header {
 
 .scoresContainer {
     display: flex;
+    justify-content: center;
     font-weight: 600;
     letter-spacing: -1px;
     gap: 36px;

@@ -20,7 +20,11 @@ function App() {
                 <StartMenu setDifficulty={setDifficulty} />
             ) : (
                 <>
-                    <Header score={score} highestScore={highestScore} />
+                    <Header
+                        score={score}
+                        highestScore={highestScore}
+                        setDifficulty={setDifficulty}
+                    />
                     <main>
                         <MemoryGame
                             difficulty={difficulty}
