@@ -5,14 +5,13 @@
     padding: 16px 0;
 }
 
-.easy {
-}
-
+.easy,
 .medium {
     grid-template-columns: repeat(6, minmax(120px, 180px));
 }
 
 .hard {
+    grid-template-columns: repeat(8, minmax(120px, 180px));
 }
 
 .loadingContainer {

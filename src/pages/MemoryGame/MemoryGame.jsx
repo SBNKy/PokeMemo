@@ -5,7 +5,7 @@ import shuffleArray from "../../utils/shuffle.js";
 import ItemCard from "../../components/ItemCard/ItemCard.jsx";
 
 const DIFFICULTY_SETTINGS = {
-    easy: 10,
+    easy: 12,
     medium: 18,
     hard: 24,
 };

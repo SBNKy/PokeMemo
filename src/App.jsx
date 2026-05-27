@@ -6,7 +6,7 @@ import Footer from "./components/Footer/Footer.jsx";
 import StartMenu from "./pages/StartMenu/StartMenu.jsx";
 
 function App() {
-    const [difficulty, setDifficulty] = useState("medium"); // debug only
+    const [difficulty, setDifficulty] = useState(""); // debug only
     const [score, setScore] = useState(0);
     const [highestScore, setHighestScore] = useState(0);
 
