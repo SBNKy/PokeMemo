@@ -2,7 +2,12 @@ import styles from "./Header.module.css";
 import pokeballIcon from "../../assets/icons/pokeball-icon.png";
 import DifficultySelector from "../DifficultySelector/DifficultySelector.jsx";
 
-export default function Header({ score, highestScore, setDifficulty }) {
+export default function Header({
+    score,
+    highestScore,
+    difficulty,
+    setDifficulty,
+}) {
     return (
         <header>
             <div className={styles.topRow}>
@@ -18,6 +23,7 @@ export default function Header({ score, highestScore, setDifficulty }) {
 
                 <div className={styles.rightContent}>
                     <DifficultySelector
+                        currentDifficulty={difficulty}
                         setDifficulty={setDifficulty}
                         direction="row"
                         isMenu={false}

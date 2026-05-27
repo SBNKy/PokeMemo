@@ -1,19 +1,29 @@
 import styles from "./DifficultySelector.module.css";
 
 export default function DifficultySelector({
+    currentDifficulty,
     setDifficulty,
     direction = "column",
     isMenu,
 }) {
     const listClass =
         direction == "row" ? styles.rowLayout : styles.columnLayout;
-    const buttonClass = `${styles.baseButton} ${isMenu ? styles.menuEffect : ""}`;
+
+    const getButtonClass = (difficulty) => {
+        let buttonClass = `${styles.baseButton} ${isMenu ? styles.menuEffect : ""}`;
+
+        if (currentDifficulty === difficulty) {
+            buttonClass += `${styles.activeLevel}`;
+        }
+
+        return buttonClass;
+    };
 
     return (
         <ul className={`${styles.selectorsList} ${listClass}`}>
             <li>
                 <button
-                    className={buttonClass}
+                    className={getButtonClass("easy")}
                     onClick={() => setDifficulty("easy")}
                 >
                     Easy
@@ -21,7 +31,7 @@ export default function DifficultySelector({
             </li>
             <li>
                 <button
-                    className={buttonClass}
+                    className={getButtonClass("medium")}
                     onClick={() => setDifficulty("medium")}
                 >
                     Medium
@@ -29,7 +39,7 @@ export default function DifficultySelector({
             </li>
             <li>
                 <button
-                    className={buttonClass}
+                    className={getButtonClass("hard")}
                     onClick={() => setDifficulty("hard")}
                 >
                     Hard

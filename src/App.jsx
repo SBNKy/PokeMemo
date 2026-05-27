@@ -23,6 +23,7 @@ function App() {
                     <Header
                         score={score}
                         highestScore={highestScore}
+                        difficulty={difficulty}
                         setDifficulty={setDifficulty}
                     />
                     <main>
