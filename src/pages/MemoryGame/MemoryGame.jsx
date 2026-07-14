@@ -51,7 +51,7 @@ export default function MemoryGame({ difficulty, setScore }) {
     if (isLoading) {
         return (
             <div className={styles.loadingContainer}>
-                <span className={styles.loader}></span>
+                <span data-testid="loader" className={styles.loader}></span>
             </div>
         );
     }
